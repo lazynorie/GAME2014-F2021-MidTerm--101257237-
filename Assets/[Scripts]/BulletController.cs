@@ -24,7 +24,7 @@ public class BulletController : MonoBehaviour, IApplyDamage
 
     private void _Move()
     {
-        transform.position += new Vector3(-horizontalSpeed, 0.0f, 0.0f) * Time.deltaTime;
+        transform.position += new Vector3(horizontalSpeed, 0.0f, 0.0f) * Time.deltaTime;
     }
 
     private void _CheckBounds()
