@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/// EnemyController.cs
+/// Jing Yuan Cheng 101257237
+/// Last modified: 22/10/2021
+/// This script controlls enemy movement and bound check
+/// version history
+/// Version 1.1 original file
+/// Version 1.2 change the orientation of the enemy movements and boundary check
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;

@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/// PlayerContoller.cs
+/// Jing Yuan Cheng 101257237
+/// Last modified: 22/10/2021
+/// This script controlls movement, bound check and firing bullet of player character
+/// version history
+/// Version 1.1 original file
+/// Version 1.2 change the orientation of the player movements and adjusting bounds
+
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEditor;
@@ -40,6 +48,7 @@ public class PlayerController : MonoBehaviour
         _FireBullet();
     }
 
+    //fire bullet at player position if there is one in the bulletpool and time is correct
      private void _FireBullet()
     {
         // delay bullet firing 
@@ -49,6 +58,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+     //player movements
     private void _Move()
     {
         float direction = 0.0f;
@@ -99,6 +109,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //this makes sure player character stays in desired bounds
     private void _CheckBounds()
     {
         

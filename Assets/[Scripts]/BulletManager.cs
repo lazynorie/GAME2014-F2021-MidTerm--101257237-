@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/// BulletManager.cs
+/// Jing Yuan Cheng 101257237
+/// Last modified: 22/10/2021
+/// This script controlls movements of bullets
+/// version history
+/// Version 1.1 original file
+/// Version 1.2 change the orientation of the bullet movements
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,6 +25,7 @@ public class BulletManager : MonoBehaviour
         _BuildBulletPool();
     }
 
+    //this function build bulletpoool
     private void _BuildBulletPool()
     {
         // create empty Queue structure
@@ -28,7 +37,7 @@ public class BulletManager : MonoBehaviour
             m_bulletPool.Enqueue(tempBullet);
         }
     }
-
+    //this function take out a bullet out of a pool
     public GameObject GetBullet(Vector3 position)
     {
         var newBullet = m_bulletPool.Dequeue();
@@ -37,6 +46,7 @@ public class BulletManager : MonoBehaviour
         return newBullet;
     }
 
+    
     public bool HasBullets()
     {
         return m_bulletPool.Count > 0;

@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/// BulletFactory.cs
+/// Jing Yuan Cheng 101257237
+/// Last modified: 22/10/2021
+/// This script take out different bullet type from bulletpool
+/// version history
+/// Version 1.1 original file
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
